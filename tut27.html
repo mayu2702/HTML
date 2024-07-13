@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and child pseudo selectors</title>
+    <style>
+        .container{
+            display: block;
+            width: 233px;
+            margin: auto;
+            
+        }
+      input{
+        display: block;
+      } 
+      input[type='text']{
+        padding: 23px;
+        border: 2px solid red ;
+      }
+      a[target] {
+        font-size: 50px;
+        color: aqua;
+      }
+      a[target='_self']
+      {
+        font-size: 20px;
+        color: rgb(123, 123, 164);
+      }
+      input[type='password']
+      {
+        border: 2px solid red ;
+        color: rgb(7, 69, 69);
+        background-color: greenyellow;
+      }
+      input[type='submit']
+      {
+        border: 2px solid rgb(152, 122, 122) ;
+        color: rgb(86, 173, 43);
+        background-color: rgb(129, 62, 103);
+      }
+      li:nth-child(3){
+        color: cyan;
+      }
+
+
+    </style>
+</head>s
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to Google</a></h1>
+        <h1><a href="http://facebook.com" target="_self">Go to facebook</a></h1>
+        
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+          <input type="submit" placeholder="submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">item1</li>
+            <li class="item" id="item-2">item2</li>
+            <li class="item" id="item-3">item3</li>
+            <li class="item" id="item-4">item4</li>
+            <li class="item" id="item-5">item5</li>
+        </ul>
+    </div>
+    
+</body>
+</html>
